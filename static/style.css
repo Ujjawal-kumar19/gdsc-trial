@@ -10,8 +10,8 @@ html {
 body {
   --Nunito: "Nunito", sans-serif;
   --Lato: "Lato", sans-serif;
-  --para-font-size: 1.5rem;
-  --super-header-font-size: 5rem;
+  --para-font-size: 1.3rem;
+  --super-header-font-size: 4rem;
   --super-header-font-size-mobile: 4rem !important;
   --header-font-size: 4rem;
 }
@@ -19,21 +19,30 @@ body {
 /* Navbar start */
 .navbar {
   background-color: #202020 !important;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
 }
+
+.logo {
+  width: 80%;
+}
+
+.menu-icon{
+ width: 70% !important;
+}
+/* 
 .navbar-brand {
   display: flex;
   align-items: center;
-}
+} */
 .nav-item {
   padding: 1.5rem 1rem 0.1rem 1rem;
 }
-.name-brand {
+/* .name-brand {
   color: #fff;
   font-family: var(--Nunito);
   font-size: 1.5rem;
   font-weight: 800;
-}
+} */
 .name-para {
   color: #fff;
   font-family: var(--Nunito);
@@ -48,16 +57,19 @@ body {
 
 /* The sidepanel menu */
 .sidepanel {
-  min-width: 0;
-  height: 100vh;
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  right: 0;
   padding-top: 10rem !important;
   background-color: #4286f5;
-  overflow-x: hidden !important;
-  transition: 0.5s;
+  transition: all 0.5s ease-in-out;
+
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0; /* Black w/opacity */
+  overflow-x: hidden;
+
+  /* display: none; */
 }
 
 /* The sidepanel links */
@@ -89,10 +101,11 @@ body {
   top: 2rem;
   right: 2.5rem;
 }
+
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
-  width: 100%;
+  width: 0%;
   position: fixed;
   z-index: 999;
   left: 0;
@@ -101,12 +114,13 @@ body {
   overflow-x: hidden;
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
+
 .container,
 .container-lg,
 .container-md,
 .container-sm,
 .container-xl {
-  max-width: 1500px;
+  max-width: 1300px;
 }
 
 /* hero */
@@ -147,7 +161,7 @@ body {
   font-family: var(--Nunito);
   line-height: 1.1;
   color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .hero-desc {
   font-size: var(--para-font-size);
@@ -166,6 +180,11 @@ body {
   font-size: var(--para-font-size) !important;
   border-radius: 0.6rem;
   border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  box-shadow: inset 16rem 0 0 0 #fabb04;
 }
 
 .hero-right {
@@ -202,20 +221,21 @@ body {
 /* media queries */
 @media only screen and (max-width: 768px) {
   .navbar {
-    padding: 0rem 1rem !important;
+    padding: 1rem 1rem !important;
   }
   .logo {
-    width: 3.9rem;
+    width: 70%;
   }
   .nav-item {
     padding: 1rem 0 0 0.2rem;
   }
+  .menu-icon{
+    width: 4.3rem !important;
+    margin-top: -4.5rem !important;
+   }
 
-  .name-brand {
-    color: #fff;
-    font-family: var(--Nunito);
-    font-size: 0.8rem;
-    font-weight: 600;
+  .navbar-brand {
+    width: auto !important;
   }
   .name-para {
     color: #fff;
@@ -223,10 +243,7 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .navbar-menu {
-    margin-left: -4rem;
-    width: 4.3rem;
-  }
+
   .hero-area {
     height: 100vh;
     width: 100% !important;
