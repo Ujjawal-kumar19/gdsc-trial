@@ -13,12 +13,14 @@ body {
   --para-font-size: 1.3rem;
   --super-header-font-size: 4rem;
   --super-header-font-size-mobile: 4rem !important;
-  --header-font-size: 4rem;
+  /* --header-font-size: 2rem; */
+  --footer-header-font-size: 2.5rem;
+  /* --footer-para-font-size: 2rem; */
 }
 
 /* Navbar start */
 .navbar {
-  background-color: #202020 !important;
+  background-color: #fff !important;
   padding: 1rem 2rem;
 }
 .logo {
@@ -200,54 +202,87 @@ body {
   background-color: #202020;
   height: 100vh !important;
 }
+/* Have a project  */
+.have-a-project {
+  border-top: 0.2rem solid white;
+  /* border-top remove after */
+  background-color: #202020 !important;
+  height: 100vh !important;
+  justify-content: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap; */
+}
+.have-project-title {
+  font-size: var(--super-header-font-size);
+  font-weight: 800;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  color: #fff;
+}
+
+/* footer */
+.footer-area {
+  padding: 5rem 0 2rem 0;
+  background-color: #202020;
+  height: 60% !important;
+  color: #fff;
+  border-top: #fff solid 0.15rem;
+}
+
+.footer-title {
+  font-size: var(--footer-header-font-size);
+  font-weight: 800;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  /* padding-bottom: 2rem; */
+}
+.social-footer-icons img {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  width: 14%;
+}
+.footer-center-desc {
+  font-size: var(--para-font-size);
+  font-weight: 400;
+  font-family: var(--Nunito);
+  margin-top: 1rem;
+}
+.footer-btn {
+  margin-top: 1.5rem;
+}
+.footer-right-title {
+  width: 70%;
+}
+.footer-right-desc {
+  margin-top: 1.8rem;
+  display: flex;
+  font-size: var(--para-font-size);
+  font-weight: 400;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+}
+.made-with-love {
+  margin-top: 8rem;
+  font-size: var(--para-font-size);
+  font-weight: 300;
+  font-family: var(--Nunito);
+}
+.footer-team {
+  color: #ea4235;
+  font-size: 1.5rem;
+  text-decoration: underline solid #ea4235;
+}
+.footer-team:hover {
+  color: #ea4235;
+}
 
 /* media queries */
 @media only screen and (max-width: 768px) {
   .navbar {
-    padding: 1rem 1rem !important;
-  }
-  .logo {
-    width: 70%;
-  }
-  .nav-item {
-    padding: 1rem 0 0 0.2rem;
-  }
-  .menu-icon {
-    width: 4.3rem !important;
-    margin-top: -4.5rem !important;
-  }
-
-  .navbar-brand {
-    width: auto !important;
-  }
-  .name-para {
-    color: #fff;
-    font-family: var(--Nunito);
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-
-  .hero-area {
-    height: 100vh;
+    background-color: #fff !important;
+    padding: 0.1rem 0.4rem;
     width: 100% !important;
-  }
-  .hero-left {
-    height: 100vh !important;
-  }
-  .hero-title {
-    margin-top: -20rem;
-    font-size: 2rem;
-    width: 80vw;
-  }
-  .hero-desc {
-    font-size: 1rem;
-    width: 78vw;
-  }
-
-  .hero-right {
-    margin-top: 11rem;
-  }
-  .overlay {
-    display: none;
   }
 }
