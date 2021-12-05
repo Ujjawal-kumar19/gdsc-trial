@@ -112,6 +112,13 @@ body {
 }
 
 .hero-left {
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: column wrap;
+}
+.hero-right {
   position: absolute;
   height: 100vh !important;
   display: flex;
@@ -139,7 +146,7 @@ body {
 }
 .hero-title {
   font-size: var(--super-header-font-size);
-  font-weight: 800;
+  font-weight: 900;
   font-family: var(--Nunito);
   line-height: 1.1;
   color: #fff;
@@ -158,6 +165,7 @@ body {
   background-color: #4286f5;
   color: #fff;
   font-family: var(--Lato);
+  font-weight: 700;
   padding: 0.5rem 2rem;
   font-size: var(--para-font-size) !important;
   border-radius: 0.6rem;
@@ -167,15 +175,9 @@ body {
 .hero-btn:hover {
   box-shadow: inset 16rem 0 0 0 #fabb04;
 }
-.hero-right {
-  height: 100vh !important;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-flow: column wrap;
-}
+
 .hero-image {
-  margin-top: 0.5rem;
+  margin-top: 10rem;
 }
 .social-hero-icons img {
   margin-top: -2.5rem;
@@ -202,24 +204,146 @@ body {
   background-color: #202020;
   height: 100vh !important;
 }
-/* Have a project  */
-.have-a-project {
-  border-top: 0.2rem solid white;
-  /* border-top remove after */
-  background-color: #202020 !important;
+/* work area */
+.work-area {
+  border-top: #202020 solid 0.1rem;
+  background-color: #fff;
   height: 100vh !important;
-  justify-content: center;
-  /* display: flex;
+}
+.work-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work-title {
+  font-size: var(--super-header-font-size);
+  font-weight: 900;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  color: #202020;
+  margin: 3rem 0;
+}
+.prev,
+.next {
+  width: 35%;
+}
+/* blog area */
+.blog-area {
+  background-color: #202020;
+  height: 100vh !important;
+}
+
+.blog-right {
+  margin-top: -3rem;
+  position: absolute;
+  height: 100vh !important;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-flow: column wrap; */
+  flex-flow: column wrap;
 }
-.have-project-title {
+.blog-desc {
+  margin-top: 0.5rem;
+  font-size: var(--para-font-size);
+  font-weight: 300;
+  width: 18rem;
+  font-family: var(--Nunito);
+  line-height: 1.5;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+.blog-btn {
+  background-color: #4286f5;
+  color: #fff;
+  font-family: var(--Lato);
+  font-weight: 700;
+  padding: 0.5rem 4rem;
+  font-size: var(--para-font-size) !important;
+  border-radius: 0.6rem;
+  border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* contact area  */
+.contact-area {
+  background-color: #4286f5 !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
+.contact-title {
   font-size: var(--super-header-font-size);
-  font-weight: 800;
+  font-weight: 900;
   font-family: var(--Nunito);
   line-height: 1.1;
   color: #fff;
+  margin-bottom: 2rem;
+}
+.contact-desc {
+  font-size: var(--para-font-size);
+  font-weight: 600;
+  font-family: var(--Nunito);
+  line-height: 1.5;
+  color: #fff;
+  margin: 5rem 30rem 2rem 30rem;
+}
+.contact-btn {
+  margin-top: 2rem;
+  background-color: #fabb04;
+  color: #fff;
+  font-family: var(--Lato);
+  padding: 0.5rem 2rem;
+  font-size: var(--para-font-size) !important;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+.social-contact-icons img {
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+
+/* Have a project  */
+.have-a-project {
+  background-color: #202020 !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
+.project-title {
+  font-size: var(--super-header-font-size);
+  font-weight: 900;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  color: #fff;
+}
+.project-desc {
+  font-size: var(--para-font-size);
+  font-weight: 600;
+  font-family: var(--Nunito);
+  line-height: 1.5;
+  color: #fff;
+  margin: 5rem 29rem 2rem 29rem;
+}
+.project-btn {
+  margin-top: 2rem;
+  background-color: #109d58;
+  color: #fff;
+  font-family: var(--Lato);
+  padding: 0.5rem 2rem;
+  font-size: var(--para-font-size) !important;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+.project-btn:hover {
+  box-shadow: inset 10rem 0 0 0 #fabb04;
 }
 
 /* footer */
